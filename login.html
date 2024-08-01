@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Lifestyle Rewards</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+      .custombar {
+    background-color: navy;
+    color: white;
+  }
+  .bgcol {
+    background-color: beige;
+  }
+  .custom-button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            border-radius: 50px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: all 0.3s ease; /* Smooth transition */
+            background-color: navy;
+        }
+        .custom-button:hover {
+            background-color: black; /* Darken on hover */
+            color: white;
+        }
+        .custom-button i {
+            margin-right: 5px; /* Spacing between icon and text */
+        }
+
+  </style>
+</head>
+
+<body class="bgcol">
+  <nav class="navbar navbar-expand-lg custombar">
+    <a class="navbar-brand text-light" href="index.html"><b>Lifestyle Rewards</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="signup.html">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="login.html">Log In</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="signup.html">Dashboard</a>
+            <a class="dropdown-item" href="signup.html">Rewards</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Log In</h2>
+            <form action="loggedin.html">
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter email"required>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password"required>
+              </div>
+              <button type="submit" class="btn btn-primary custom-button">Log In</button>
+            </form>
+            <small class="form-text text-muted mt-2"><a href="#">Forgot password?</a></small>
+            </br>
+            <a href="index.html">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

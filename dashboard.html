@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - Lifestyle Rewards</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .custombar {
+      background-color: navy;
+      color: white;
+    }
+    .bgcol {
+      background-color: beige;
+    }
+    .custom-button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            border-radius: 50px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: all 0.3s ease; /* Smooth transition */
+            background-color: navy;
+        }
+        .custom-button:hover {
+            background-color: black; /* Darken on hover */
+            color: white;
+        }
+        .custom-button i {
+            margin-right: 5px; /* Spacing between icon and text */
+        }
+
+
+  </style>
+</head>
+<body class="bgcol">
+  <nav class="navbar navbar-expand-lg custombar">
+    <a class="navbar-brand text-light" href="#"><b>Lifestyle Rewards</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="loggedin.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="rewards.html">Rewards</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="index.html">Log Out</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link text-light justify-content-end" href="cart.html">Cart</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" style="color: navy;">Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action" style="color: navy;">Profile</a>
+          <a href="rewards.html" class="list-group-item list-group-item-action"style="color: navy;"> Rewards</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title" style="color: navy;">Welcome to Your Dashboard</h2>
+            <p class="card-text" style="color: navy;"><b>You have 1000 points available to redeem. Go to Rewards to see what you can redeem</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
